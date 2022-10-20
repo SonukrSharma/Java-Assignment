@@ -6,7 +6,7 @@ public abstract class Match {
 
     void display(){
         System.out.println("Requirements:\nNeed "+(getTarget()-getCurrentScore())+" in "+calculateBalls()+" balls");
-        System.out.println("Require Run Rate - "+calculateRunrate());
+        System.out.println("Require Run Rate - "+String.format("%.2f",calculateRunrate()));
     }
     abstract float calculateRunrate();
     abstract int calculateBalls();
