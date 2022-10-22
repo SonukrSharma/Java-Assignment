@@ -2,7 +2,7 @@ package session6.question2;
 
 import java.util.Comparator;
 
-public class PriceAndBookingTimeComparator implements Comparator<PriceAndBookingTimeComparator> {
+public class PriceAndBookingTimeComparator extends TicketBooking implements Comparator<PriceAndBookingTimeComparator> {
     private TicketBooking ticketBooking;
 
     public PriceAndBookingTimeComparator(TicketBooking ticketBooking) {
